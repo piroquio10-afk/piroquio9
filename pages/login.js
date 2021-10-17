@@ -29,7 +29,9 @@ const Login = () => {
                 <Row className="flex flex-col xl:flex-row">
                     <Col span={24} xl={10} className="p-4">
                         <h1 className="font-bold text-5xl uppercase">LOG IN</h1>
-                        <p className="my-4 underline">Forgotten Password?</p>
+                        <Link href="/forgetpassword">
+                            <p className="my-4 underline cursor-pointer">Forgotten Password?</p>
+                        </Link>
                         <Form
                             name="basic"
                             onFinish={onFinish}
